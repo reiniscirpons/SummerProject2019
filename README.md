@@ -8,13 +8,21 @@ TODO
 
 ## To do:
 1. How do we know were done?
-  * What is the end goal? A: A protocol of distributing a number of reads to each sample in an efficient manner.
-  * What metrics do we assess our allocation protocol by? Coverage?
+  * What is the end goal? 
+  A: A protocol of distributing the number of reads to each sample in a manner which maximizes the power 
+  of the test used to find driving mutations.
+  * What metrics do we assess our allocation protocol by? 
+  A: We look at the power of tests detecting driver mutations in the gene.
   * If we assume perfect knowledge, what is the best protocol we can come up with?
-  * Does best change if we are targeting coverage of a specific gene instead of looking at everything in general?
+  * Does best change if we are targeting coverage of a specific gene instead of 
+  looking at everything in general?
 2. What are we permitted to do?
-  * What are the inputs? A: Size of genome and proportion of tumor in sample. 
+  * What are the inputs? 
+  A: Size of genome and proportion of tumor in sample. Initially we assume this is free. 
+  Later we can incorporate cost.  
   * How does the distribution proceed? Do we have to allocate reads all at once, or can we run it in rounds?
+  A: Initially look at 
+  * 
 3. What is the case for a single sample?
   * Best strategy is to allocate all our reads.
   * What about efficiency: What is the least amount of reads we have to allocate to guarantee some metric?
